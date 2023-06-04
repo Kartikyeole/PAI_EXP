@@ -1,0 +1,21 @@
+#include<P18F4550.h>
+void delay()
+{
+	unsigned int i;
+	for(i=0;i<30000;i++);
+}
+void main()
+{
+    	TRISB = 0x00;                           //LED pins as output
+    	LATB = 0x00;
+       	while(1)
+    	{
+    		 
+             		  LATB = 0XFF;
+             		   delay();
+             		  LATB = 0x00;
+             		   delay();
+            		
+        	}	
+        
+}

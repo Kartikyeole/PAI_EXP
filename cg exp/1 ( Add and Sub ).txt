@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<p18f4550.h>
+void main(void)
+{
+int sub;
+int sum;
+sub=0;
+sum=0;
+sub=0x04 - 0X02;
+sum=0x0A + 0X02;
+TRISC=0;
+PORTC=sub;
+TRISB=0;
+PORTB=sum;
+}
